@@ -1,0 +1,9 @@
+project: rnshah9/mimic1
+target: mimic1
+image: ghcr.io/rnshah9/playground:mimic1
+tests:
+  - file://test
+
+cmds:
+  - cmd: /repo/mimic -f @@ -o out.wav
+    filepath: /test.txt
