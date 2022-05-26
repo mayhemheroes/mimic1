@@ -1,6 +1,5 @@
 project: rnshah9/mimic1
-target: mimic1
-image: ghcr.io/rnshah9/playground:mimic1
+target: mimic
 tests:
   - file://test
 

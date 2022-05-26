@@ -1,13 +1,10 @@
 FROM --platform=linux/amd64 ubuntu:20.04
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y vim less man
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential pkg-config automake libtool libasound2-dev
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y wget
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential pkg-config automake libtool libasound2-dev wget unzip
 
 ADD . /repo
 WORKDIR /repo
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y unzip
 RUN ./dependencies.sh
 RUN ./autogen.sh
 RUN ./configure
