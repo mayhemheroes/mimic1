@@ -1,8 +1,8 @@
-project: rnshah9/mimic1
+project: mimic1
 target: mimic
-tests:
+testsuite:
   - file://test
 
 cmds:
-  - cmd: /repo/mimic -f @@ -o out.wav
+  - cmd: /repo/mimic -f /test.txt -o out.wav
     filepath: /test.txt
