@@ -1,0 +1,8 @@
+project: mimic1
+target: cst-upcase
+testsuite: null
+
+cmds:
+  - cmd: /fuzz_cst_upcase
+    env:
+      ASAN_OPTIONS: detect_leaks=0
