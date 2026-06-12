@@ -5,4 +5,3 @@ testsuite:
 
 cmds:
   - cmd: /install/bin/mimic -f @@ -o out.wav
-    filepath: /test.txt
